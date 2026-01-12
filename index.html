@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiMark101 - AI-Powered Digital Marketing Agency</title>
+    <meta name="description" content="DigiMark101 - Your AI-powered digital marketing agency. Email marketing, social media automation, and comprehensive marketing solutions all in one platform.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DigiMark<span class="highlight">101</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-tools" class="nav-link">AI Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link cta-button" onclick="openClientPortal()">Client Portal</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">AI-Powered Digital Marketing <span class="highlight">Simplified</span></h1>
+                <p class="hero-description">
+                    Transform your business with DigiMark101's comprehensive AI-driven marketing platform. 
+                    Email marketing, social media automation, and advanced analytics - all in one place.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="startFreeTrial()">
+                        <i class="fas fa-rocket"></i> Start Free Trial
+                    </button>
+                    <button class="btn-secondary" onclick="scheduleDemo()">
+                        <i class="fas fa-calendar"></i> Schedule Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Active Campaigns</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500%</span>
+                        <span class="stat-label">Average ROI Increase</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-dashboard">
+                    <div class="dashboard-header">
+                        <h3>AI Marketing Dashboard</h3>
+                        <span class="status-indicator">Live</span>
+                    </div>
+                    <div class="dashboard-metrics">
+                        <div class="metric">
+                            <span class="metric-value" id="email-sent">2,847</span>
+                            <span class="metric-label">Emails Sent Today</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="social-posts">156</span>
+                            <span class="metric-label">Social Posts Automated</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="leads-generated">89</span>
+                            <span class="metric-label">Leads Generated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Marketing Solutions</h2>
+                <p>Everything you need to dominate your market, powered by advanced AI</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3>AI Email Marketing</h3>
+                    <p>Intelligent email campaigns that adapt to your audience behavior, optimize send times, and increase conversion rates automatically.</p>
+                    <ul class="service-features">
+                        <li>Smart segmentation</li>
+                        <li>A/B testing automation</li>
+                        <li>Predictive analytics</li>
+                        <li>Personalization engine</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Automation</h3>
+                    <p>Automated content creation, scheduling, and engagement across all major social platforms with AI-driven optimization.</p>
+                    <ul class="service-features">
+                        <li>Content generation</li>
+                        <li>Optimal posting times</li>
+                        <li>Audience analysis</li>
+                        <li>Engagement automation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Real-time insights and predictive analytics to maximize your marketing ROI with data-driven decision making.</p>
+                    <ul class="service-features">
+                        <li>Real-time reporting</li>
+                        <li>ROI tracking</li>
+                        <li>Predictive modeling</li>
+                        <li>Custom dashboards</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Automation</h3>
+                    <p>Complete marketing workflow automation that learns and improves continuously to deliver better results over time.</p>
+                    <ul class="service-features">
+                        <li>Workflow automation</li>
+                        <li>Lead scoring</li>
+                        <li>Customer journey mapping</li>
+                        <li>Smart recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="ai-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful AI Marketing Tools</h2>
+                <p>Experience the future of marketing with our advanced AI-powered tools</p>
+            </div>
+            <div class="tools-container">
+                <div class="tool-demo">
+                    <div class="tool-interface">
+                        <div class="tool-header">
+                            <h3>AvaSkye AI Assistant</h3>
+                            <span class="ai-status">AI Active</span>
+                        </div>
+                        <div class="chat-interface">
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="message ai-message">
+                                    <span class="message-author">AvaSkye</span>
+                                    <p>Hello! I'm AvaSkye, your AI marketing assistant. How can I help optimize your campaigns today?</p>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" id="user-input" placeholder="Ask AvaSkye about your marketing strategy...">
+                                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-list">
+                    <div class="tool-item">
+                        <i class="fas fa-magic"></i>
+                        <div>
+                            <h4>Content Generator</h4>
+                            <p>AI-powered content creation for emails, social posts, and ad copy</p>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-target"></i>
+                        <div>
+                            <h4>Audience Targeting</h4>
+                            <p>Smart audience segmentation and targeting optimization</p>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Optimal Timing</h4>
+                            <p>AI determines the best times to reach your audience</p>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-brain"></i>
+                        <div>
+                            <h4>Predictive Analytics</h4>
+                            <p>Forecast campaign performance and market trends</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Marketing Power Level</h2>
+                <p>Flexible plans designed to grow with your business</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Up to 5,000 email contacts</li>
+                        <li><i class="fas fa-check"></i> 3 social media accounts</li>
+                        <li><i class="fas fa-check"></i> Basic AI automation</li>
+                        <li><i class="fas fa-check"></i> Standard analytics</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <button class="plan-button">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Up to 25,000 email contacts</li>
+                        <li><i class="fas fa-check"></i> 10 social media accounts</li>
+                        <li><i class="fas fa-check"></i> Advanced AI automation</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics & reporting</li>
+                        <li><i class="fas fa-check"></i> AvaSkye AI assistant</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button class="plan-button">Start Free Trial</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">799</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited email contacts</li>
+                        <li><i class="fas fa-check"></i> Unlimited social accounts</li>
+                        <li><i class="fas fa-check"></i> Full AI automation suite</li>
+                        <li><i class="fas fa-check"></i> Custom analytics & insights</li>
+                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i> 24/7 phone support</li>
+                    </ul>
+                    <button class="plan-button">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Marketing?</h2>
+                    <p>Get started with DigiMark101 today and experience the power of AI-driven marketing automation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@digimark101.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Digital Marketing Hub, Innovation District</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service Interest</option>
+                                <option value="email-marketing">Email Marketing</option>
+                                <option value="social-media">Social Media Automation</option>
+                                <option value="ai-tools">AI Marketing Tools</option>
+                                <option value="full-suite">Complete Marketing Suite</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your marketing goals..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DigiMark<span class="highlight">101</span></h3>
+                    <p>Empowering businesses with AI-driven marketing solutions that deliver real results.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Email Marketing</a></li>
+                        <li><a href="#services">Social Media Automation</a></li>
+                        <li><a href="#ai-tools">AI Tools</a></li>
+                        <li><a href="#services">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#" onclick="openClientPortal()">Client Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DigiMark101. All rights reserved. | AI-Powered Marketing Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
